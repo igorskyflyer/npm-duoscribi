@@ -1,5 +1,5 @@
-# $1
-$2
+# duoscribi
+✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓
 
 <br>
 
@@ -17,7 +17,7 @@ $2
 Install it by executing:
 
 ```shell
-npm i "@igor.dvlpr/$1"
+npm i "@igor.dvlpr/duoscribi"
 ```
 
 <br>
