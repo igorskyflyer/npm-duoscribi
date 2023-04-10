@@ -563,8 +563,13 @@ mapper.addRules({
   '\u01B6': 'z',
 })
 
+/**
+ * Converts letters with diacritics to regular, ASCII letters.
+ * @param input The string to convert.
+ * @returns {string} The converted string or an empty string otherwise.
+ */
 export function duoscribi(input: string): string {
-  if (input.length === 0) {
+  if (typeof input !== 'string' || input.length === 0) {
     return ''
   }
   return mapper.replace(input)
