@@ -1,4 +1,5 @@
-# duoscribi
+# DúöScríbî
+
 ✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓
 
 <br>
@@ -23,3 +24,13 @@ npm i "@igor.dvlpr/duoscribi"
 <br>
 
 ## 🤹🏼‍♂️ API
+
+```ts
+function duoscribi(input: string): string
+```
+
+Converts letters with diacritics to regular, ASCII letters.
+
+`input: string` - The string to convert.
+
+Returns the converted string or an empty string otherwise.
