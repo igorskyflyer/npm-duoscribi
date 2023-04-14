@@ -1,8 +1,6 @@
-import { MappedReplacer } from 'mapped-replacer'
+type CharMap = { [key: string]: string }
 
-const mapper = new MappedReplacer()
-
-mapper.addRules({
+const map: CharMap = {
   // Uppercase letters
   // A
   '\u00C1': 'A',
@@ -561,16 +559,31 @@ mapper.addRules({
   '\u1E95': 'z',
   '\u0290': 'z',
   '\u01B6': 'z',
-})
+}
 
 /**
  * Converts letters with diacritics to regular, ASCII letters.
- * @param input The string to convert.
+ * @param {string} input The string to convert.
  * @returns {string} The converted string or an empty string otherwise.
  */
 export function duoscribi(input: string): string {
   if (typeof input !== 'string' || input.length === 0) {
     return ''
   }
-  return mapper.replace(input)
+
+  const count: number = input.length
+  let result: string = ''
+
+  for (let i: number = 0; i < count; i++) {
+    const char: string = input.charAt(i)
+    const charInMap = map[char]
+
+    if (charInMap) {
+      result += charInMap
+    } else {
+      result += char
+    }
+  }
+
+  return result
 }
