@@ -514,5 +514,5 @@ The `508` supported characters with diacritics are:
 - ż,
 - ẓ,
 - ẕ,
-- ʐ,  
-  `ƶ`.
+- ʐ,
+- ƶ.
