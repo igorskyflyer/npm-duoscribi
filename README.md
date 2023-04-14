@@ -37,4 +37,4 @@ Returns the converted string or an empty string otherwise.
 
 <br>
 
-> ℹ To see the `508` supported characters with diacritics, see the [SUPPORTED_CHARS.md](https://github.com/igorskyflyer/npm-duoscribi/blob/main/SUPPORTED_CHARS.md) file.
+> ℹ To see the extensive list of `508` supported characters with diacritics, see the [SUPPORTED_CHARS.md](https://github.com/igorskyflyer/npm-duoscribi/blob/main/SUPPORTED_CHARS.md) file.
