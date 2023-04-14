@@ -32,4 +32,8 @@ describe('🧪 duoscribi tests 🧪', () => {
       'The way to get started is to quit talking and begin doing'
     )
   })
+
+  it('#6 should return "Pidan kaksin kasin kiinni juomista niinku"', () => {
+    chai.equal(duoscribi('Pidän kaksin käsin kiinni juomista niinku'), 'Pidan kaksin kasin kiinni juomista niinku')
+  })
 })
