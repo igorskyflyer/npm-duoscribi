@@ -1,50 +1,48 @@
 {
-	"name": "@igor.dvlpr/duoscribi",
-	"version": "2.0.0",
-	"description": "✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓",
-	"sideEffects": false,
-	"engines": {
-		"node": ">=20.0"
-	},
-	"types": "./dist/index.d.mts",
-	"main": "./dist/index.mjs",
-	"module": "./dist/index.mjs",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"build": "tsc",
-		"test": "vitest --run",
-		"debug": "vitest",
-		"pub": "npm test && npm run build && npm publish --access public"
-	},
-	"keywords": [
-		"duoscribi",
-		"diacritics",
-		"accent",
-		"letters",
-		"string",
-		"text",
-		"language",
-		"utility",
-		"igorskyflyer",
-		"igor.dvlpr"
-	],
-	"license": "MIT",
-	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
-	"funding": "https://ko-fi.com/igorskyflyer",
-	"homepage": "https://github.com/igorskyflyer/npm-duoscribi",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/igorskyflyer/npm-duoscribi.git"
-	},
-	"bugs": {
-		"url": "https://github.com/igorskyflyer/npm-duoscribi/issues"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^1.8.3",
-		"@types/node": "^20.14.10",
-		"typescript": "^5.5.3",
-		"vitest": "^1.6.0"
-	}
+  "name": "@igor.dvlpr/duoscribi",
+  "version": "2.0.0",
+  "description": "✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.0"
+  },
+  "types": "./dist/index.d.mts",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest --run",
+    "debug": "vitest",
+    "pub": "npm test && npm run build && npm publish --access public"
+  },
+  "keywords": [
+    "duoscribi",
+    "diacritics",
+    "accent",
+    "letters",
+    "string",
+    "text",
+    "language",
+    "utility",
+    "igorskyflyer",
+    "igor.dvlpr"
+  ],
+  "license": "MIT",
+  "author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
+  "funding": "https://ko-fi.com/igorskyflyer",
+  "homepage": "https://github.com/igorskyflyer/npm-duoscribi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorskyflyer/npm-duoscribi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igorskyflyer/npm-duoscribi/issues"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3",
+    "vitest": "^1.6.0"
+  }
 }
