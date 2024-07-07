@@ -1,28 +1,24 @@
 {
 	"name": "@igor.dvlpr/duoscribi",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓",
 	"sideEffects": false,
 	"engines": {
-		"node": ">=16.0"
+		"node": ">=20.0"
 	},
-	"types": "./dist/index.d.ts",
-	"main": "./dist/index.js",
+	"types": "./dist/index.d.mts",
+	"main": "./dist/index.mjs",
+	"module": "./dist/index.mjs",
 	"files": [
 		"dist"
 	],
 	"scripts": {
 		"build": "tsc",
-		"test": "ts-mocha test/*.ts",
+		"test": "vitest --run",
+		"debug": "vitest",
 		"pub": "npm test && npm run build && npm publish --access public"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/igorskyflyer/npm-duoscribi.git"
-	},
 	"keywords": [
-		"igorskyflyer",
-		"igor.dvlpr",
 		"duoscribi",
 		"diacritics",
 		"accent",
@@ -30,22 +26,25 @@
 		"string",
 		"text",
 		"language",
-		"utility"
+		"utility",
+		"igorskyflyer",
+		"igor.dvlpr"
 	],
-	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
 	"license": "MIT",
+	"author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
 	"funding": "https://ko-fi.com/igorskyflyer",
+	"homepage": "https://github.com/igorskyflyer/npm-duoscribi",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/igorskyflyer/npm-duoscribi.git"
+	},
 	"bugs": {
 		"url": "https://github.com/igorskyflyer/npm-duoscribi/issues"
 	},
-	"homepage": "https://github.com/igorskyflyer/npm-duoscribi#readme",
 	"devDependencies": {
-		"@types/chai": "^4.3.1",
-		"@types/mocha": "^9.1.1",
-		"@types/node": "^12.17.0",
-		"chai": "^4.3.6",
-		"mocha": "^10.0.0",
-		"ts-mocha": "^10.0.0",
-		"typescript": "^4.7.4"
+		"@biomejs/biome": "^1.8.3",
+		"@types/node": "^20.14.10",
+		"typescript": "^5.5.3",
+		"vitest": "^1.6.0"
 	}
 }
