@@ -4,19 +4,23 @@
 	],
 	"exclude": [
 		"node_modules/**/*",
-		"test/**/*"
+		"test/**/*",
+		"dist/**/*"
 	],
 	"compilerOptions": {
-		"target": "ES5",
+		"target": "ES2022",
+		"module": "NodeNext",
 		"declaration": true,
 		"outDir": "./dist",
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"declarationDir": "./dist",
-		"moduleResolution": "node",
+		"moduleResolution": "nodenext",
 		"noEmitOnError": true,
 		"strict": true,
 		"noUnusedLocals": true,
-		"noUnusedParameters": true
+		"noUnusedParameters": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true
 	}
 }
