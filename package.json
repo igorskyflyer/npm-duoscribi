@@ -1,6 +1,6 @@
 {
   "name": "@igor.dvlpr/duoscribi",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓",
   "sideEffects": false,
   "engines": {
@@ -41,8 +41,11 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
-    "@types/node": "^20.14.10",
-    "typescript": "^5.5.3",
-    "vitest": "^1.6.0"
+    "@types/node": "^20.14.12",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.4"
+  },
+  "dependencies": {
+    "@igor.dvlpr/mapped-replacer": "^2.0.1"
   }
 }
