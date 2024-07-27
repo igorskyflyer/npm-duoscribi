@@ -1,9 +1,10 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
-type CharMap = { [key: string]: string }
-type CharGroups = { [key: string]: string[] }
+import { MappedReplacer } from '@igor.dvlpr/mapped-replacer'
 
-const mapGroups: CharGroups = {
+const mapped: MappedReplacer = new MappedReplacer()
+
+mapped.addRules({
   // Uppercase letters
   // A
   A: [
@@ -559,18 +560,7 @@ const mapGroups: CharGroups = {
     '\u0290',
     '\u01B6'
   ]
-}
-
-const map: CharMap = Object.entries(mapGroups).reduce(
-  (acc: CharMap, [ascii, chars]) => {
-    for (const char of chars) {
-      acc[char] = ascii
-    }
-
-    return acc
-  },
-  {} as CharMap
-)
+})
 
 /**
  * Converts letters with diacritics to regular, ASCII letters.
@@ -582,19 +572,5 @@ export function duoscribi(input: string): string {
     return ''
   }
 
-  const count: number = input.length
-  let result: string = ''
-
-  for (let i: number = 0; i < count; i++) {
-    const char: string = input.charAt(i)
-    const charInMap = map[char]
-
-    if (charInMap) {
-      result += charInMap
-    } else {
-      result += char
-    }
-  }
-
-  return result
+  return mapped.replace(input)
 }
