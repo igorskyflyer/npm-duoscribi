@@ -82,7 +82,8 @@ Returns the converted string or an empty string otherwise.
 ```ts
 import { duoscribi } from '@igor.dvlpr/duoscribi'
 
-duoscribi('Ťḥė ẅâÿ ţɵ ɡėţ șţãrţėd iș ţɵ quiţ ţālkinɡ ānd bėgin dɵinɡ') // returns 'The way to get started is to quit talking and begin doing'
+duoscribi('Ťḥė ẅâÿ ţɵ ɡėţ șţãrţėd iș ţɵ quiţ ţālkinɡ ānd bėgin dɵinɡ')
+// returns 'The way to get started is to quit talking and begin doing'
 ```
 
 ---
