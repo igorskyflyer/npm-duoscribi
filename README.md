@@ -3,7 +3,7 @@
   <h1>DúöScríbî (DuoScribi)</h1>
 </div>
 
-<blockquote align="center">Ultra‑Fast Conversion • ASCII‑Clean Output • Zero‑Noise Normalization • Trusted by Devs Worldwide</blockquote>
+<blockquote align="center">Blazing‑Fast Conversion • ASCII‑Clean Output • Zero‑Noise Normalization • Trusted by Devs Worldwide</blockquote>
 
 <h4 align="center">
   ✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓
