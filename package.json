@@ -1,35 +1,44 @@
 {
-    "name": "@igor.dvlpr/duoscribi",
-    "version": "2.1.0",
+    "name": "@igorskyflyer/duoscribi",
+    "version": "3.0.0",
     "description": "✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓",
     "sideEffects": false,
     "engines": {
-        "node": ">=20.0"
+        "node": ">=22.0"
     },
-    "types": "./dist/index.d.mts",
-    "main": "./dist/index.mjs",
-    "module": "./dist/index.mjs",
-    "files": ["dist"],
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "tsc",
         "test": "vitest --run",
-        "debug": "vitest",
-        "pub": "npm test && npm run build && npm publish --access public"
+        "pub": "pnpm test && git push origin main --tags"
     },
     "keywords": [
-        "duoscribi",
+        "accent-removal",
+        "ascii",
+        "conversion",
         "diacritics",
-        "accent",
+        "duoscribi",
+        "igor dimitrijević",
+        "igorskyflyer",
+        "language",
+        "latinize",
         "letters",
+        "normalize",
         "string",
         "text",
-        "language",
-        "utility",
-        "igorskyflyer",
-        "igor.dvlpr"
+        "transliterate",
+        "typescript",
+        "unicode",
+        "utility"
     ],
     "license": "MIT",
-    "author": "Igor Dimitrijević <igor.dvlpr@gmail.com> (https://github.com/igorskyflyer)",
+    "author": "Igor Dimitrijević <support@igorskyflyer.me> (https://github.com/igorskyflyer)",
     "funding": "https://ko-fi.com/igorskyflyer",
     "homepage": "https://github.com/igorskyflyer/npm-duoscribi",
     "repository": {
@@ -39,14 +48,18 @@
     "bugs": {
         "url": "https://github.com/igorskyflyer/npm-duoscribi/issues"
     },
-    "devDependencies": {
-        "@biomejs/biome": "^1.8.3",
-        "@igor.dvlpr/biome-config-igorskyflyer": "^1.0.0",
-        "@types/node": "^20.14.12",
-        "typescript": "^5.5.4",
-        "vitest": "^2.0.4"
-    },
     "dependencies": {
-        "@igor.dvlpr/mapped-replacer": "^2.0.1"
-    }
+        "@igorskyflyer/mapped-replacer": "^3.0.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.4",
+        "@igorskyflyer/biome-config": "^2.1.0",
+        "@types/node": "^22.18.5",
+        "typescript": "^5.9.2",
+        "vitest": "^3.2.4"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "packageManager": "pnpm@10.17.0"
 }
