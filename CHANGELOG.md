@@ -1,14 +1,20 @@
-## 📒 Changelog
+# 📒 Changelog
 
-### of [@igor.dvlpr/duoscribi](https://github.com/igorskyflyer/npm-duoscribi)
+### of [@igorskyflyer/duoscribi](https://github.com/igorskyflyer/npm-duoscribi)
 
 <br>
 
-## v2.1.0
+## v3.0.0 (*17-Sep-2025*)
 
-<p align="right"><em>28-Jul-2024</em></p>
+- **💻 dev**: upgrade Node to >= v22
+- **💻 dev**: upgrade dependencies
 
-- **🪅 feat**: use [@igor.dvlpr/mapped-replacer](https://www.npmjs.com/package/@igor.dvlpr/mapped-replacer) for string replacement, performance improvement
+<br>
+<br>
+
+## v2.1.0 (*28-Jul-2024*)
+
+- **✨ feat**: use [**@igorskyflyer/mapped-replacer**](https://www.npmjs.com/package/@igorskyflyer/mapped-replacer) for string replacement and performance improvements
 
 <br>
 
@@ -17,8 +23,6 @@
 <br>
 <br>
 
-## v2.0.0
-
-<p align="right"><em>07-Jul-2024</em></p>
+## v2.0.0 (*07-Jul-2024*)
 
 - **💻 dev**: migrate to TypeScript and ESM-only
