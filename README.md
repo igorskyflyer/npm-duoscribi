@@ -1,63 +1,61 @@
-<h1 align="center">DúöScríbî</h1>
-
-<br>
-
 <div align="center">
+  <img src="https://raw.githubusercontent.com/igorskyflyer/npm-duoscribi/main/media/duoscribi.png" alt="Icon of DúöScríbî (DuoScribi) - a TypeScript package for converting diacritics to ASCII letters" width="256" height="256">
+  <h1>DúöScríbî (DuoScribi)</h1>
+</div>
+
+<blockquote align="center">Ultra‑Fast Conversion • ASCII‑Clean Output • Zero‑Noise Normalization • Trusted by Devs Worldwide</blockquote>
+
+<h4 align="center">
   ✒ DúöScríbî allows you to convert letters with diacritics to regular letters. 🤓
-</div>
+</h4>
 
 <br>
-<br>
 
-<div align="center">
-  <blockquote>
-    <br>
-    <h4>💖 Support further development</h4>
-    <span>I work hard for every project, including this one
-    <br>
-    and your support means a lot to me!
-    <br>
-    <br>
-    Consider buying me a coffee. ☕
-    <br>
-    <strong>Thank you for supporting my efforts! 🙏😊</strong></span>
-    <br>
-    <br>
-    <a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="150"></a>
-    <br>
-    <br>
-    <a href="https://github.com/igorskyflyer"><em>@igorskyflyer</em></a>
-    <br>
-    <br>
-    <br>
-  </blockquote>
-</div>
+## 📃 Table of Contents
+
+- [**Features**](#-features)
+- [**Usage**](#-usage)
+- [**API**](#-api)
+- [**Examples**](#️-examples)
+- [**Changelog**](#-changelog)
+- [**Support**](#-support)
+- [**License**](#-license)
+- [**Related**](#-related)
+- [**Author**](#-author)
 
 <br>
-<br>
 
-## 📃 Table of contents
+## 🤖 Features
 
-- [Usage](#-usage)
-- [API](#-api)
-    - [duoscribi()](#duoscribiinput-string-string)
-- [Examples](#-examples)
-- [Changelog](#-changelog)
-- [License](#-license)
-- [Related](#-related)
-- [Author](#-author)
+- ⚡ Converts `diacritics` to plain `ASCII` instantly
+- 🧠 Handles full `Unicode` range with mapped rules
+- 🧹 Cleans up noisy input for search and indexing
+- 🔤 Preserves `letter` case while `normalizing` text
+- 🛠 Built with `TypeScript` for strong typing
+- 🧩 Uses a modular `replacer` ([**@igorskyflyer/mapped-replacer**](https://www.npmjs.com/package/@igorskyflyer/mapped-replacer)) for easy rule extension
+- 🚫 Returns `empty` string on `invalid` input
+- 📦 `Lightweight` and ready for npm projects
 
 <br>
 <br>
 
 ## 🕵🏼 Usage
 
-Install it by executing:
+Install it by executing any of the following, depending on your preferred package manager:
 
-```shell
-npm i "@igor.dvlpr/duoscribi"
+```bash
+pnpm add @igorskyflyer/duoscribi
 ```
 
+```bash
+yarn add @igorskyflyer/duoscribi
+```
+
+```bash
+npm i @igorskyflyer/duoscribi
+```
+
+<br>
 <br>
 
 ## 🤹🏼 API
@@ -72,66 +70,93 @@ Returns the converted string or an empty string otherwise.
 
 <br>
 
-> ℹ To see the extensive list of `508` supported characters with diacritics, see the [SUPPORTED_CHARS.md](https://github.com/igorskyflyer/npm-duoscribi/blob/main/SUPPORTED_CHARS.md) file.
+> ### 💡 TIP
+>
+> #### Supported Characters
+>
+> To see the extensive list of `508` supported characters with diacritics, see the [SUPPORTED_CHARS.md](https://github.com/igorskyflyer/npm-duoscribi/blob/main/SUPPORTED_CHARS.md) file.
+>
 
----
+<br>
+<br>
 
-## ✨ Examples
+## 🗒️ Examples
 
 `example.ts`
 ```ts
-import { duoscribi } from '@igor.dvlpr/duoscribi'
+import { duoscribi } from '@igorskyflyer/duoscribi'
 
 duoscribi('Ťḥė ẅâÿ ţɵ ɡėţ șţãrţėd iș ţɵ quiţ ţālkinɡ ānd bėgin dɵinɡ')
 // returns 'The way to get started is to quit talking and begin doing'
 ```
 
----
+<br>
+<br>
 
 ## 📝 Changelog
 
-📑 The changelog is available here: [CHANGELOG.md](https://github.com/igorskyflyer/npm-duoscribi/blob/main/CHANGELOG.md).
+📑 Read about the latest changes in the [**CHANGELOG**](https://github.com/igorskyflyer/npm-duoscribi/blob/main/CHANGELOG.md).
 
----
+<br>
+<br>
 
 ## 🪪 License
 
-Licensed under the MIT license which is available here, [MIT license](https://github.com/igorskyflyer/npm-duoscribi/blob/main/LICENSE).
+Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-duoscribi/blob/main/LICENSE).
 
----
+<br>
+<br>
+
+## 💖 Support
+
+<div align="center">
+  I work hard for every project, including this one and your support means a lot to me!
+  <br>
+  Consider buying me a coffee. ☕
+  <br>
+  <br>
+  <a href="https://ko-fi.com/igorskyflyer" target="_blank"><img src="https://raw.githubusercontent.com/igorskyflyer/igorskyflyer/main/assets/ko-fi.png" alt="Donate to igorskyflyer" width="180" height="46"></a>
+  <br>
+  <br>
+  <em>Thank you for supporting my efforts!</em> 🙏😊
+</div>
+
+<br>
+<br>
 
 ## 🧬 Related
 
-[@igor.dvlpr/keppo](https://www.npmjs.com/package/@igor.dvlpr/keppo)
+[**@igorskyflyer/keppo**](https://www.npmjs.com/package/@igorskyflyer/keppo)
 
 > _🎡 Parse, manage, compare and output SemVer-compatible version numbers. 🛡_
 
 <br>
 
-[@igor.dvlpr/str-is-in](https://www.npmjs.com/package/@igor.dvlpr/str-is-in)
+[**@igorskyflyer/str-is-in**](https://www.npmjs.com/package/@igorskyflyer/str-is-in)
 
 > _🧵 Provides ways of checking whether a String is present in an Array of Strings using custom Comparators. 🔍_
 
 <br>
 
-[@igor.dvlpr/encode-entities](https://www.npmjs.com/package/@igor.dvlpr/encode-entities)
+[**@igorskyflyer/encode-entities**](https://www.npmjs.com/package/@igorskyflyer/encode-entities)
 
 > _🏃‍♂️ Fast and simple Map and RegExp based HTML entities encoder. 🍁_
 
 <br>
 
-[@igor.dvlpr/unc-path](https://www.npmjs.com/package/@igor.dvlpr/unc-path)
+[**@igorskyflyer/unc-path**](https://www.npmjs.com/package/@igorskyflyer/unc-path)
 
 > _🥽 Provides ways of parsing UNC paths and checking whether they are valid. 🎱_
 
 <br>
 
-[@igor.dvlpr/strip-html](https://www.npmjs.com/package/@igor.dvlpr/strip-html)
+[**@igorskyflyer/strip-html**](https://www.npmjs.com/package/@igorskyflyer/strip-html)
 
 > _🥞 Removes HTML code from the given string. Can even extract text-only from the given an HTML string. ✨_
----
 
 <br>
+<br>
+<br>
 
-### 👨🏻‍💻 Author
-Created by **Igor Dimitrijević** ([*@igorskyflyer*](https://github.com/igorskyflyer/)).
+## 👨🏻‍💻 Author
+Created by **Igor Dimitrijević ([*@igorskyflyer*](https://github.com/igorskyflyer/))**.
