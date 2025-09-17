@@ -37,8 +37,6 @@
 - 🚫 Returns `empty` string on `invalid` input
 - 📦 `Lightweight` and ready for npm projects
 
-[^1]: tested on an `AMD 5825u`.
-
 <br>
 <br>
 
@@ -163,3 +161,5 @@ Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-duoscri
 
 ## 👨🏻‍💻 Author
 Created by **Igor Dimitrijević ([*@igorskyflyer*](https://github.com/igorskyflyer/))**.
+
+[^1]: tested on an `AMD 5825u`.
