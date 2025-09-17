@@ -1,10 +1,10 @@
 // Author: Igor Dimitrijević (@igorskyflyer)
 
-import { MappedReplacer } from '@igor.dvlpr/mapped-replacer'
+import { MappedReplacer } from '@igorskyflyer/mapped-replacer'
 
 const mapped: MappedReplacer = new MappedReplacer()
 
-// biome-ignore format:
+// biome-ignore format: clarity
 mapped.addRules({
   // Uppercase letters
   // A
