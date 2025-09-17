@@ -61,7 +61,9 @@ npm i @igorskyflyer/duoscribi
 
 ## 🤹🏼 API
 
-### `duoscribi(input: string): string`
+```ts
+duoscribi(input: string): string
+```
 
 *Converts letters with diacritics to regular, ASCII letters.*  
 
