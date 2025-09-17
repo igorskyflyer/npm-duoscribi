@@ -27,7 +27,7 @@
 
 ## 🤖 Features
 
-- 🚀 Blazing‑fast at `~900K ops/sec` across `508` Unicode chars (tested on an `AMD 5825u`)
+- 🚀 Blazing‑fast at `~900K ops/sec`[^1] across `508` Unicode chars
 - ⚡ Converts `diacritics` to plain `ASCII` instantly
 - 🧠 Handles full `Unicode` range with mapped rules
 - 🧹 Cleans up noisy input for search and indexing
@@ -36,6 +36,8 @@
 - 🧩 Uses a modular `replacer` ([**@igorskyflyer/mapped-replacer**](https://www.npmjs.com/package/@igorskyflyer/mapped-replacer)) for easy rule extension
 - 🚫 Returns `empty` string on `invalid` input
 - 📦 `Lightweight` and ready for npm projects
+
+[^1]: tested on an `AMD 5825u`.
 
 <br>
 <br>
