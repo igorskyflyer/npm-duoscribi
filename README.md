@@ -27,6 +27,7 @@
 
 ## 🤖 Features
 
+- 🚀 Blazing‑Fast at `~900K ops/sec` across `508` Unicode chars (tested on an `AMD 5825u`)
 - ⚡ Converts `diacritics` to plain `ASCII` instantly
 - 🧠 Handles full `Unicode` range with mapped rules
 - 🧹 Cleans up noisy input for search and indexing
